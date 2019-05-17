@@ -35,6 +35,7 @@ nav{
 
 .bkgrd{
     background-color: #efefef;
+    height: 600px;
 }
 
 a{
@@ -87,7 +88,27 @@ li{
         border-radius: 3px;
     }
 
+.lrgbutton {
+        position: relative;
+        top: 75px;
+        right: 755px;
+        margin: 24px 18px 24px 20px;
+        padding: 15px 30px;
+        background-color: #27ccff;
+        color: #e7e7e7;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 200%;
+        border: none;
+        border-radius: 3px;
+    }
+
 .button:hover{
+    color: #27ccff;
+    background-color: #e7e7e7;
+}
+
+.lrgbutton:hover{
     color: #27ccff;
     background-color: #e7e7e7;
 }
@@ -110,10 +131,27 @@ footer{
     outline-offset: -20px;
 }
 
+hr {
+    width: 20%;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#27ccff;
+    border: 0 none;
+    margin-top: 30px;
+    margin-bottom:30px;
+    }
+
 #about{
     font-family: Arial;
     font-size: 150%;
     margin: 30px 250px;
     line-height: 2;
     text-align: center;
+}
+
+#bglogo{
+    height: 40%;
+    margin: 160px 100px 50px;
+    padding: 10px;
 }
