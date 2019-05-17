@@ -11,31 +11,83 @@ h2{
     text-align: center;
     font-family: Arial;
     font-size: 200%;
-    padding: 20px;
+    padding: 40px;
+    margin: 0;
     text-decoration: underline solid #27ccff;
     text-underline-position: under;
 }
 
-img{
+nav{
+    height:60px;
+    background-color: #ffffff;
+}
+
+.logotop{
     height: 60px;
     padding: 13px 13px 13px 18px;
 }
 
-/* Below is standard for all buttons*/
-
-button{
-    float: right;
-    margin: 24px 18px 24px 20px;
-    padding: 12px 17px;
-    background-color: #27ccff;
-    color: #e7e7e7;
-    font-style: Arial;
-    font-weight: bold;
-    border: none;
-    border-radius: 3px;
+.cube{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-button:hover{
+.bkgrd{
+    background-color: #efefef;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*below is used to space items evenly across page*/
+
+ul{
+    display: flex;
+    height: 40px;
+    justify-content:space-between;
+    list-style-type: none;
+    padding: 5px;
+    margin: 15px 100px;
+    
+
+    /* former list code
+    display: inline-block;
+    list-style: none;
+    height: 50px;
+    background-color: #ffffff;
+    */
+}
+
+li{
+    font-family: Bebas Neue;
+    font-weight: Bold;
+    font-size: 200%;
+    color: #27ccff;
+}
+
+.menutext{
+    color: #27ccff;
+}
+
+.menutext:hover{
+    color: #272727;
+}
+
+.button {
+        float: right;
+        margin: 24px 18px 24px 20px;
+        padding: 12px 17px;
+        background-color: #27ccff;
+        color: #e7e7e7;
+        font-family: Arial;
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+    }
+
+.button:hover{
     color: #27ccff;
     background-color: #e7e7e7;
 }
@@ -56,4 +108,12 @@ footer{
     height: 845px;
     outline: 3px solid #27ccff;
     outline-offset: -20px;
+}
+
+#about{
+    font-family: Arial;
+    font-size: 150%;
+    margin: 30px 250px;
+    line-height: 2;
+    text-align: center;
 }
