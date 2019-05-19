@@ -3,7 +3,7 @@ header{
     background-color: #464646;
 }
 
-.hidden {
+#hidden {
     display: none;
   }
 
@@ -35,6 +35,15 @@ nav{
 
 .bkgrd{
     background-color: #efefef;
+}
+
+/* Can't get the scroll bar for About section to show up at smaller screen sizes 
+- FIXED - 
+"you have to make sure that you content default height smaller than the container height; if not, the scroll-bar will not be hidden." */
+
+.about{
+    overflow-y: auto;
+    background-color: #efefef;
     height: 600px;
 }
 
@@ -42,7 +51,7 @@ a{
     text-decoration: none;
 }
 
-/*below is used to space items evenly across page*/
+/*below is used to space menu items evenly across page*/
 
 ul{
     display: flex;
@@ -115,6 +124,7 @@ li{
 
 section{
     height: 850px;
+    width: 100%
 }
 
 footer{
@@ -151,6 +161,7 @@ hr {
 }
 
 #bglogo{
+    position: relative;
     height: 40%;
     margin: 160px 100px 50px;
     padding: 10px;
