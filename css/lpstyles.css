@@ -129,6 +129,8 @@ li a:hover:before {
         font-weight: bold;
         border: none;
         border-radius: 3px;
+        -o-border-radius: 3px;
+        -ms-border-radius: 3px;
     }
 
 .lrgbutton {
@@ -145,6 +147,8 @@ li a:hover:before {
         font-size: 200%;
         border: none;
         border-radius: 3px;
+        -o-border-radius: 3px;
+        -ms-border-radius: 3px;
     }
 
 .button:hover{
@@ -215,4 +219,32 @@ h3{
     color: #272727;
     text-decoration: underline solid #27ccff;
     text-underline-position: under;
+}
+
+figure, img{
+    margin:0;
+    padding:0;
+}
+
+.cord{
+    width: 50%;
+    display: flex;
+    margin-left: 50%;
+    margin-top: 8%;
+}
+
+/* Cord animation from right side of page */
+
+.auto-slider-content{
+    animation-name: slide;
+    animation-duration: 15s;
+}
+
+@keyframes slide{
+    10%{
+        transform:translateX(0);
+    }
+    0%{
+        transform:translateX(50%);
+    }
 }
