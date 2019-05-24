@@ -7,8 +7,13 @@ html {
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
     height: 90px;
     background-color: #464646;
+}
+body{
+    margin: 0;
 }
 
 h1 {
@@ -45,6 +50,15 @@ an exact match, the asterisk character, *, may be used within the square bracket
 .cube{
     display: block;
     margin: 0px auto;
+    transition-duration: 2s;
+    transition: 2s ease;
+}
+
+.cube:hover{
+    -moz-transform: rotate(720deg);
+	-webkit-transform: rotate(720deg);
+	-o-transform: rotate(720deg);
+	transform: rotate(720deg);
 }
 
 .bkgrd{
@@ -120,7 +134,6 @@ li a:hover:before {
   }
 
 .button {
-        float: right;
         margin: 24px 18px 24px 20px;
         padding: 12px 17px;
         background-color: #27ccff;
@@ -134,14 +147,13 @@ li a:hover:before {
     }
 
 .lrgbutton {
-        position: relative;
-        top: 75px;
-        right: 500px;
-        left: -670px;
-        margin: 24px 18px 50px 20px;
+        display: block;
+        width: 240px;
+        margin: 20px 20px 20px 80px;
         padding: 15px 30px;
         background-color: #27ccff;
         color: #e7e7e7;
+        text-align: center;
         font-family: Arial;
         font-weight: bold;
         font-size: 200%;
@@ -149,6 +161,7 @@ li a:hover:before {
         border-radius: 3px;
         -o-border-radius: 3px;
         -ms-border-radius: 3px;
+        transition: all .1s linear;
     }
 
 .button:hover{
@@ -158,11 +171,17 @@ li a:hover:before {
     transition: all 0.2s ease-in-out 0s;
 }
 
+
+
 .lrgbutton:hover{
     color: #27ccff;
     background-color: #e7e7e7;
     -webkit-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
+}
+
+.lrgbutton:active{
+    transform: translateY(4px);
 }
 
 section{
@@ -204,16 +223,14 @@ h2 ~ p{
 }
 
 .bglogo{
-    position: relative;
-    display: inline-block;
-    height: 37%;
-    margin: 150px 100px 40px;
-    padding: 10px;
+    height: 40%;
+    margin: 125px 50px 20px;
+    padding: 20px;
 }
 
 h3{
     display: inline-block;
-    margin-left: 50%;
+    margin-left: 40%;
     font-family: Bebas Neue;
     font-size: 500%;
     color: #272727;
@@ -227,24 +244,107 @@ figure, img{
 }
 
 .cord{
+    position: relative;
     width: 50%;
-    display: flex;
     margin-left: 50%;
-    margin-top: 8%;
+    margin-top: -24%;
+    z-index: 1;
 }
 
 /* Cord animation from right side of page */
 
 .auto-slider-content{
     animation-name: slide;
-    animation-duration: 15s;
+    animation-duration: 1.5s;
 }
 
 @keyframes slide{
-    10%{
+    100%{
         transform:translateX(0);
     }
     0%{
-        transform:translateX(50%);
+        transform:translateX(40%);
+    }
+}
+
+.btn-contain{
+   height: 25%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.gotop-btn{
+   width: 50px;
+   height: 50px;
+   background: #27ccff;
+
+   text-decoration: none;
+   text-align: center;
+   line-height: 50px;
+   color: #ffffff;
+   font-size: 25px;
+   border-radius: 3px;
+
+}
+
+
+.gotop-btn:hover{
+    color: #27ccff;
+    background-color: #fff;
+    font-size: 30px;
+    transition: all 0.2s ease-in-out 0.1s;
+}
+
+.social{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: 0 45%;
+    font-size: 50px;
+    color: #c7c7c7;
+    height: 300px;
+    width: 200px;
+}
+
+.social > i{
+    padding:10px;
+}
+
+.social > i:hover{
+    text-align:center;
+    color: #fff;
+    font-size: 55px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.bg-yellow-cord{
+    height: 850px;
+}
+
+.yellow-pos{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -256px;
+}
+
+.slider-content{
+    opacity: 0;
+}
+
+.slider-content:hover{
+    animation-name: yellow-cord;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    opacity: 1;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+@keyframes yellow-cord{
+    100%{
+        transform:translateX(100);
+    }
+    0%{
+        transform:translateX(40%);
     }
 }
