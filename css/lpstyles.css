@@ -17,7 +17,8 @@ body{
 }
 
 h1 {
-    display: none;
+    position: absolute;
+    left: -1000px;
   }
 
 h2{
@@ -302,7 +303,7 @@ figure, img{
     justify-content: space-around;
     margin: 0 45%;
     font-size: 50px;
-    color: #c7c7c7;
+    color: #9e9e9e;
     height: 300px;
     width: 200px;
 }
@@ -314,7 +315,6 @@ figure, img{
 .social > i:hover{
     text-align:center;
     color: #fff;
-    font-size: 55px;
     transition: all 0.2s ease-in-out 0s;
 }
 
@@ -348,3 +348,4 @@ figure, img{
         transform:translateX(40%);
     }
 }
+
