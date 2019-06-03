@@ -259,18 +259,116 @@ aside > p{
 
 /*  Service Section  */
 
-.service-text{
+.service-flex-container{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 850px;
+  }
+  
+  .service-right{
+    width: 40%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+  }
+  
+  .service-heading {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
     width: 100%;
+    margin:0;
+  }
+  
+  .service-heading > h3{
+    font-size: 500%;
+    color: #fff;
+    background-color: #272727;
+    width: 100%;
+    padding-left: 30%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    margin: 0;
+    text-decoration: underline solid #27ccff;
+    text-underline-position: under;
+  }
+  
+  .service-left{
+    width: 60%;
+    height: 100%;
+    background-image: url("../img/customer_support.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .service-text > p{
+    font-family: Arial;
+    font-size: 120%;
+    line-height: 2;
+    text-align: left;
+  }
+
+  .service-text > p:nth-child(1){
+      font-size: 200%;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+  }
+
+  .service-text > p:nth-child(2){
+      font-size: 150%;
+      font-weight: bold;
+      padding: 0;
+      margin: 0;
+  }
+
+/*  Inventory Section  */
+
+.inventory-flex-container{
+     display: flex;
 }
 
-.service-text-container{
-    margin: 0;
-    padding: 50px;
+.inventory-left{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    padding-left: 40px;
+    margin-left: 2.5%;
 }
+
+.inventory-text{
+    font-family: arial;
+    line-height: 2;
+    background-color: #e7e7e7;
+    padding: 15% 10% 15%;
+}
+
+.text-line-one{
+    font-size: 150%;
+}
+
+.text-line-two {
+    font-size: 165%;
+    font-weight: bold;
+}
+
+.inventory-heading{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2%;
+}
+
+.inventory-right{
+    background-image: url("../img/color_cords.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 60%;
+    height: 100%;
+}
+
+
 
 /*  Footer  */
 
