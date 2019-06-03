@@ -3,103 +3,114 @@
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    height: 90px;
-    background-color: #464646;
-}
-body{
-    margin: 0;
-}
+/*  Top Level Styles  */
 
-h1 {
-    position: absolute;
-    left: -1000px;
-  }
-
-h2{
-    text-align: center;
-    font-family: Arial;
-    font-size: 200%;
-    padding: 40px;
-    margin: 0;
+h3{
+    font-size: 500%;
+    font-family: Bebas Neue;
+    color: #272727;
     text-decoration: underline solid #27ccff;
     text-underline-position: under;
+    margin: 40px;
 }
+
+/*  Header  */
+
+header{
+    height: 850px;
+    width: 100%;
+    background: #0c0c0c;
+    outline: 3px solid #27ccff;
+    outline-offset: -20px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 600px;
+    padding-top: 120px;
+    padding-bottom: 0px;
+}    
+
+.bg-logo{
+    width: 40%;
+    padding-left: 80px;
+}
+
+.side-cords{
+    width: 50%;
+    z-index: 1;
+    margin-top: 50px;
+}
+
+/* Cord animation from right side of page */
+
+/* .auto-slider-content{
+    animation-name: slide;
+    animation-duration: 1.5s;
+}
+
+@keyframes slide{
+    100%{
+        transform:translateX(0);
+    }
+    0%{
+        transform:translateX(40%);
+    }
+} */
+
+.lrgbutton {
+    display: block;
+    position: relative;
+    width: 240px;
+    margin: 10px 20px 20px 90px;
+    padding: 15px 30px;
+    background-color: #27ccff;
+    color: #e7e7e7;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 200%;
+    border: none;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    transition: all .1s linear;
+}
+
+.lrgbutton:hover{
+color: #27ccff;
+background-color: #e7e7e7;
+-webkit-transition: all 0.2s ease-in-out 0s;
+transition: all 0.2s ease-in-out 0s;
+}
+
+/*  Navigation Bar  */
 
 nav{
-    height:60px;
-    background-color: #ffffff;
-}
-
-/* 
-img[src*="lpc_logo]{...} 
-Attribute Contains Selector -
-When looking to find an element based on part of an attribute value, but not 
-an exact match, the asterisk character, *, may be used within the square brackets of a selector. */
-
-.smlogo{
     height: 80px;
-    padding: 13px 13px 13px 18px;
-    margin: 5px 0px;
+    background: #ffffff;
 }
 
-.cube{
-    display: block;
-    margin: 0px auto;
-    transition-duration: 2s;
-    transition: 2s ease;
-}
-
-.cube:hover{
-    -moz-transform: rotate(720deg);
-	-webkit-transform: rotate(720deg);
-	-o-transform: rotate(720deg);
-	transform: rotate(720deg);
-}
-
-.bkgrd{
-    background-color: #efefef;
-}
-
-/* Can't get the scroll bar for About section to show up at smaller screen sizes 
-- FIXED - 
-"you have to make sure that you content default height smaller than the container height; if not, the scroll-bar will not be hidden." */
-
-.about{
-    overflow-y: auto;
-    height: 600px;
-    background: #efefef url('../img/partial_cube.png') no-repeat 100%;
+ul{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 80px;
+    list-style-type: none;
+    margin: 0;
 }
 
 a{
     text-decoration: none;
 }
 
-/*below is used to space menu items evenly across page*/
-
-ul{
-    display: flex;
-    height: 40px;
-    justify-content:space-between;
-    list-style-type: none;
-    padding: 5px;
-    margin: 15px 100px;
-    
-
-    /* former list code
-    display: inline-block;
-    list-style: none;
-    height: 50px;
-    background-color: #ffffff;
-    */
-}
-
-li a{
+li > a{
     font-family: Bebas Neue;
     font-weight: Bold;
     font-size: 200%;
@@ -107,13 +118,13 @@ li a{
     position: relative;
 }
 
-li a:hover{
+li > a:hover{
     color: #272727;
     -webkit-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
 }
 
-li a:before{
+li > a:before{
     content: "";
     position: absolute;
     width: 100%;
@@ -128,80 +139,36 @@ li a:before{
     transition: all 0.2s ease-in-out 0s;
 }
 
-li a:hover:before {
+li > a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-  }
-
-.button {
-        margin: 24px 18px 24px 20px;
-        padding: 12px 17px;
-        background-color: #27ccff;
-        color: #e7e7e7;
-        font-family: Arial;
-        font-weight: bold;
-        border: none;
-        border-radius: 3px;
-        -o-border-radius: 3px;
-        -ms-border-radius: 3px;
-    }
-
-.lrgbutton {
-        display: block;
-        width: 240px;
-        margin: 20px 20px 20px 80px;
-        padding: 15px 30px;
-        background-color: #27ccff;
-        color: #e7e7e7;
-        text-align: center;
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 200%;
-        border: none;
-        border-radius: 3px;
-        -o-border-radius: 3px;
-        -ms-border-radius: 3px;
-        transition: all .1s linear;
-    }
-
-.button:hover{
-    color: #27ccff;
-    background-color: #e7e7e7;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
 }
 
+/*  About Section  */
 
-
-.lrgbutton:hover{
-    color: #27ccff;
-    background-color: #e7e7e7;
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
+.about{
+    overflow-y: auto;
+    height: 600px;
+    background: #efefef url('../img/partial_cube.png') no-repeat 100%;
 }
 
-.lrgbutton:active{
-    transform: translateY(4px);
+h2{
+    text-align: center;
+    font-family: Arial;
+    font-size: 200%;
+    padding: 40px;
+    margin: 0;
+    text-decoration: underline solid #27ccff;
+    text-underline-position: under;
 }
 
-section{
-    height: 850px;
-    width: 100%
-}
-
-footer{
-    background-color: #171717;
-    height: 450px;
-}
-
-/* .banner displays an inner outline for the main banner*/
-
-.banner{
-    background-color: #0c0c0c;
-    height: 765px;
-    outline: 3px solid #27ccff;
-    outline-offset: -20px;
+h2 ~ p{
+    font-family: Arial;
+    font-size: 150%;
+    margin: 30px 250px;
+    line-height: 2;
+    text-align: center;
 }
 
 hr{
@@ -213,139 +180,129 @@ hr{
     border: 0 none;
     margin-top: 30px;
     margin-bottom:30px;
-    }
-
-h2 ~ p{
-    font-family: Arial;
-    font-size: 150%;
-    margin: 30px 250px;
-    line-height: 2;
-    text-align: center;
 }
 
-.bglogo{
-    height: 40%;
-    margin: 125px 50px 20px;
-    padding: 20px;
+.cube{
+    display: block;
+    margin: 0px auto;
 }
 
-h3{
+/*  Baseline for all other ections  */
+
+section{
+    height: 850px;
+    width: 100%
+}
+
+section:nth-child(odd) {
+    background-color: #efefef;   
+}
+
+/*  Quality Section  */
+
+.quality-heading{
     display: inline-block;
-    margin-left: 40%;
-    font-family: Bebas Neue;
-    font-size: 500%;
-    color: #272727;
-    text-decoration: underline solid #27ccff;
-    text-underline-position: under;
-}
-
-figure, img{
-    margin:0;
-    padding:0;
-}
-
-.cord{
     position: relative;
-    width: 50%;
-    margin-left: 50%;
-    margin-top: -24%;
-    z-index: 1;
-}
-
-/* Cord animation from right side of page */
-
-.auto-slider-content{
-    animation-name: slide;
-    animation-duration: 1.5s;
-}
-
-@keyframes slide{
-    100%{
-        transform:translateX(0);
-    }
-    0%{
-        transform:translateX(40%);
-    }
-}
-
-.btn-contain{
-   height: 25%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.gotop-btn{
-   width: 50px;
-   height: 50px;
-   background: #27ccff;
-
-   text-decoration: none;
-   text-align: center;
-   line-height: 50px;
-   color: #ffffff;
-   font-size: 25px;
-   border-radius: 3px;
-
-}
-
-
-.gotop-btn:hover{
-    color: #27ccff;
-    background-color: #fff;
-    font-size: 30px;
-    transition: all 0.2s ease-in-out 0.1s;
-}
-
-.social{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    margin: 0 45%;
-    font-size: 50px;
-    color: #9e9e9e;
-    height: 300px;
-    width: 200px;
-}
-
-.social > i{
-    padding:10px;
-}
-
-.social > i:hover{
-    text-align:center;
-    color: #fff;
-    transition: all 0.2s ease-in-out 0s;
+    left: 33.5%;
 }
 
 .bg-yellow-cord{
+    display: block;
+    background-image: url("../img/yellow_cord.png");
+    background-repeat: no-repeat;
+    position: relative;
+    float: right;
     height: 850px;
+    width: 574px;
+    z-index: 1;
 }
 
-.yellow-pos{
+.qc-badge{
+    display: block;
+    background-image: url("../img/qc.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 700px;
+    margin: 0px 10px 0px 10px;
+    position: relative;
+    float: left;
+    z-index: 1;
+}
+
+aside > p{
+    font-family: Arial;
+    font-size: 120%;
+    line-height: 2;
+    text-align: left;
+    z-index: 1;
+}
+
+.product-aside-position{
+    position: absolute;
+    margin-left: 38.5%;
+    margin-top: 3%;
+    padding: 40px 30px 80px 30px;
+    background-color: #efefef;
+}
+
+.blue-line{
+    width: 100%;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#27ccff;
+    border: 0 none;
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+
+/*  Service Section  */
+
+.service-text{
     display: flex;
     justify-content: flex-end;
-    margin-top: -256px;
+    align-items: center;
+    height: 850px;
+    width: 100%;
 }
 
-.slider-content{
-    opacity: 0;
+.service-text-container{
+    margin: 0;
+    padding: 50px;
 }
 
-.slider-content:hover{
-    animation-name: yellow-cord;
-    animation-duration: 1.5s;
-    animation-play-state: running;
-    opacity: 1;
-    transition: all 0.2s ease-in-out 0s;
+/*  Footer  */
+
+footer{
+    background-color: #171717;
+    height: 450px;
 }
 
-@keyframes yellow-cord{
-    100%{
-        transform:translateX(100);
-    }
-    0%{
-        transform:translateX(40%);
-    }
-}
-
+.btn-contain{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+.gotop-btn{
+    width: 50px;
+    height: 50px;
+    background: #27ccff;
+ 
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 25px;
+    border-radius: 3px;
+ 
+ }
+ 
+.gotop-btn:hover{
+     color: #27ccff;
+     background-color: #fff;
+     font-size: 30px;
+     transition: all 0.2s ease-in-out 0.1s;
+ }
