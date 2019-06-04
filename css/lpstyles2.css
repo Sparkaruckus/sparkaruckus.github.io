@@ -207,7 +207,6 @@ section:nth-child(odd) {
 }
 
 .bg-yellow-cord{
-    display: block;
     background-image: url("../img/yellow_cord.png");
     background-repeat: no-repeat;
     position: relative;
@@ -218,7 +217,6 @@ section:nth-child(odd) {
 }
 
 .qc-badge{
-    display: block;
     background-image: url("../img/qc.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -339,7 +337,7 @@ aside > p{
 
 .inventory-text{
     font-family: arial;
-    line-height: 2;
+    line-height: 1.6;
     background-color: #e7e7e7;
     padding: 15% 10% 15%;
 }
@@ -355,18 +353,77 @@ aside > p{
 
 .inventory-heading{
     display: flex;
-    justify-content: flex-end;
-    padding-top: 2%;
+    justify-content: center;
+    margin: 2%;
 }
 
 .inventory-right{
-    background-image: url("../img/color_cords.png");
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 75%;
+    background-image: url("../img/locking_cord.png");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: right;
+    background-position-y: 75%;
+    
+    /* background-image: url("../img/color_cords.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    width: 60%;
-    height: 100%;
+    width: 75%;
+    height: 100%; */
 }
+
+.inventory-button-layout{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    margin: 5% 175px;
+}
+
+.inventory-text-right{
+    font-family: arial;
+    line-height: 1.6;
+    font-size: 200%;
+}
+
+.product-button {
+    font-size: 3em;
+    text-align: left;
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+  }
+  
+  .product-button > a {
+    font-family: bebas neue;
+    text-decoration: none;
+    color: #272727;
+    background-color: #e7e7e7;
+    margin: 0;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+  }
+  
+  .button-animate {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  .button-animate:hover {
+    color: #fff;
+    background-color: #27ccff;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.5s ease in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+  }
+  
 
 
 
