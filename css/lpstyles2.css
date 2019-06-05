@@ -363,7 +363,6 @@ aside > p{
 
 .inventory-right{
     display: flex;
-    /* justify-content: flex-start; */
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
@@ -409,7 +408,7 @@ aside > p{
     color: #272727;
     background-color: #e7e7e7;
     margin: 0;
-    padding: 5px 20px;
+    padding: 5px 20px 0px;
     border: none;
     border-radius: 3px;
     -o-border-radius: 3px;
@@ -426,8 +425,91 @@ aside > p{
     transition: all 0.5s ease-in-out 0s;
   }
   
+/*  Extension Cord Section  */
 
+.extension-flex-container{
+    display: flex;
+    flex-direction: column;
+}
 
+.extension-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.extension-right > h3{
+    margin-right: 5%;
+}
+
+.extension-left{
+    height: 80%;
+    width: 100%;
+    background-image: url("../img/coiled_locking.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: top;
+}
+
+/*  Plug Adapter Section  */
+
+.plug-adapter-container{
+    display: flex;
+    background-image: url("../img/plug_adapter.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 45%;
+}
+
+.adapter-left{
+    height: 100%;
+    width: 50%;
+    padding: 5%;
+}
+
+.text-shrink > p{
+    font-size: 450%;
+    font-family: Bebas Neue;
+    letter-spacing: 10px;
+    color: #272727;
+    margin-top: 1rem;
+}
+
+.adapter-right{
+    height: 100%;
+    width: 50%;
+}
+
+/* Wiring Devices Section  */
+
+.wiring-flex-container{
+    display: flex;
+    background-image: url("../img/wiring_device.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40%;
+    padding: 5%;
+}
+
+.wiring-right{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 50%;
+}
+
+.wiring-left{
+    height: 100%;
+    width: 50%;
+}
+
+/*  Contact Section  */
+
+.contact-section{
+    display: flex;
+}
 
 /*  Footer  */
 
