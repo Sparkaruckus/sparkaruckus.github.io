@@ -14,7 +14,11 @@ h3{
     color: #272727;
     text-decoration: underline solid #27ccff;
     text-underline-position: under;
-    margin: 40px;
+    margin: 0;
+}
+
+.quality-heading > h3{
+    margin-top: 30px;
 }
 
 /*  Header  */
@@ -328,18 +332,19 @@ aside > p{
 
 .inventory-left{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 40%;
     height: 100%;
-    padding-left: 40px;
-    margin-left: 2.5%;
+    /* padding-left: 40px; */
+    padding-top: 50px;
+    margin-left: 3%;
 }
 
 .inventory-text{
     font-family: arial;
     line-height: 1.6;
     background-color: #e7e7e7;
-    padding: 15% 10% 15%;
+    padding: 20% 10% 35%;
 }
 
 .text-line-one{
@@ -354,22 +359,22 @@ aside > p{
 .inventory-heading{
     display: flex;
     justify-content: center;
-    margin: 2%;
 }
 
 .inventory-right{
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     height: 100%;
     width: 75%;
+    padding-top: 50px;
+    margin-left: 5%;
     background-image: url("../img/locking_cord.png");
     background-repeat: no-repeat;
     background-size: 65%;
     background-position: right;
     background-position-y: 75%;
-    
     /* background-image: url("../img/color_cords.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -382,7 +387,7 @@ aside > p{
     display: flex;
     align-self: flex-start;
     flex-direction: column;
-    margin: 5% 175px;
+    margin-top: 30px;
 }
 
 .inventory-text-right{
@@ -392,13 +397,13 @@ aside > p{
 }
 
 .product-button {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: left;
     letter-spacing: 0px;
     margin-bottom: 50px;
   }
   
-  .product-button > a {
+  .button-animate {
     font-family: bebas neue;
     text-decoration: none;
     color: #272727;
@@ -408,10 +413,7 @@ aside > p{
     border: none;
     border-radius: 3px;
     -o-border-radius: 3px;
-    -ms-border-radius: 3px;
-  }
-  
-  .button-animate {
+    -ms-border-radius: 3px;  
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
@@ -419,7 +421,7 @@ aside > p{
   .button-animate:hover {
     color: #fff;
     background-color: #27ccff;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     -webkit-transition: all 0.5s ease in-out 0s;
     transition: all 0.5s ease-in-out 0s;
   }
