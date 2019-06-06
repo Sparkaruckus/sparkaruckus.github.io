@@ -654,7 +654,6 @@ transition: all 0.2s ease-in-out .0s;
 .division-of {
     align-self: center;
     height: 75px;
-    width: 0 auto;
     margin-left: 20px;
     margin-bottom: 50px;
 }
