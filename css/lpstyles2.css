@@ -629,6 +629,7 @@ width: 100%;
 .social-row-2 {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     grid-column: span 3;
     width: 100%;
 }
@@ -655,6 +656,7 @@ transition: all 0.2s ease-in-out .0s;
     height: 75px;
     width: 0 auto;
     margin-left: 20px;
+    margin-bottom: 50px;
 }
 
 .copywrite {
