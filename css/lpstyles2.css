@@ -193,16 +193,22 @@ hr{
 
 /*  Baseline for all other ections  */
 
-section{
+/* section{
     height: 850px;
     width: 100%
 }
 
 section:nth-child(odd) {
     background-color: #efefef;   
-}
+} */
 
 /*  Quality Section  */
+
+.quality-section {
+    height: 850px;
+    width: 100%;
+    background-color: #fff;
+}
 
 .quality-heading{
     display: inline-block;
@@ -263,6 +269,9 @@ aside > p{
 
 .service-flex-container{
     display: flex;
+    height: 850px;
+    width: 100%;
+    background-color: #efefef;
   }
   
   .service-right{
@@ -328,6 +337,9 @@ aside > p{
 
 .inventory-flex-container{
      display: flex;
+     height: 850px;
+     width: 100%;
+     background-color: #fff;
 }
 
 .inventory-left{
@@ -430,6 +442,9 @@ aside > p{
 .extension-flex-container{
     display: flex;
     flex-direction: column;
+    height: 850px;
+    width: 100%;
+    background-color: #efefef;
 }
 
 .extension-right{
@@ -461,6 +476,9 @@ aside > p{
     background-repeat: no-repeat;
     background-position: right;
     background-size: 45%;
+    height: 850px;
+    width: 100%;
+    background-color: #fff;
 }
 
 .adapter-left{
@@ -491,6 +509,9 @@ aside > p{
     background-position: left;
     background-size: 40%;
     padding: 5%;
+    height: 850px;
+    width: 100%;
+    background-color: #efefef;
 }
 
 .wiring-right{
@@ -509,39 +530,178 @@ aside > p{
 
 .contact-section{
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 850px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
 }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #27ccff;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #00ace1;
+  }
+
+  input[type=text]:focus {
+      border-color: #27ccff;
+  }
+
+  select[id=country]:focus {
+      border-color: #27ccff;
+  }
+
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  label {
+    font-family: bebas neue;
+    font-size: 150%;
+    letter-spacing: 1px;
+    color: #272727;
+  }
+
+  .text-area {
+      height: 200px;
+  }
+
+  .text-area:focus {
+      border-color: #27ccff;
+  }
+
+h4{
+    font-size: 300%;
+    font-family: Bebas Neue;
+    color: #272727;
+    text-decoration: underline solid #27ccff;
+    text-underline-position: under;
+    margin-top: 0;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}  
 
 /*  Footer  */
 
 footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #171717;
     height: 450px;
+    width: 100%;
 }
 
-.btn-contain{
-    height: 25%;
+.grid {              
+    display: grid;
+    width: 900px;
+    grid-template-columns: 300px 300px 300px; 
+    grid-template-rows:    100px 150px 50px;
+}
+
+.social-row {
+grid-column: span 3;
+width: 100%;
+}
+
+.social-row-2 {
     display: flex;
-    align-items: center;
     justify-content: center;
- }
+    grid-column: span 3;
+    width: 100%;
+}
+
+.social-flex-container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+i{
+font-size: 50px;
+color: #9e9e9e;
+padding: 20px;
+}
+
+i:hover{
+color: #fff;
+transition: all 0.2s ease-in-out .0s;
+}
+
+.division-of {
+    align-self: center;
+    height: 75px;
+    width: 0 auto;
+    margin-left: 20px;
+}
+
+.copywrite {
+    display: flex;
+    justify-content: center;
+    color: #9e9e9e;
+    font-family: arial;
+    margin-left: 15px;
+}
+
+.to-top-container {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
  
 .gotop-btn{
+    display: flex;
+    justify-content: center;
     width: 50px;
     height: 50px;
     background: #27ccff;
- 
     text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    color: #ffffff;
-    font-size: 25px;
     border-radius: 3px;
  
  }
+
+ .gotop-btn > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 25px;
+ }
  
-.gotop-btn:hover{
-     color: #27ccff;
-     background-color: #fff;
-     font-size: 30px;
-     transition: all 0.2s ease-in-out 0.1s;
+.gotop-btn > i:hover {
+    display: flex;
+    justify-content: center;
+    color: #27ccff;
+    font-size: 30px;
+    transition: all 0.2s ease-in-out 0.1s;
+ }
+
+ .gotop-btn:hover {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out 0.1s;
  }
