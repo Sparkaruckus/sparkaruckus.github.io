@@ -8,14 +8,14 @@
         <link rel="icon" type="image/png" href="img/small_cube.png"/>
     </head>
     <body>
-            <header>
-                <div class="banner">
-                    <img src="img/lpc_logo.png" alt="Locking Power Cords Logo" class="bg-logo">
-                <!-- <div class="auto-slider-content"> -->
-                    <img src="img/cords.png" alt="Extension Power Cords" class="side-cords">
-                </div>
-                <!-- </div> -->
+        <header>
+            <div class="banner">
+                <img src="img/lpc_logo.png" alt="Locking Power Cords Logo" class="bg-logo">
                 <a href="#" class="lrgbutton" target="_blank" rel="noopener noreferrer">Shop Now</a>
+            </div>
+            <div class="auto-slider-content">
+                <img src="img/cords.png" alt="Extension Power Cords" class="side-cords">
+            </div>
             </header>
         <nav>
             <ul>
@@ -61,12 +61,12 @@
             </section>
             <section class="service-flex-container" id="service">
                     <div class="service-left">
-                      <span class="service-heading">
+                      <div class="service-heading">
                       <h3>Unmatched Service</h3>
-                      </span>
+                      </div>
                     </div>
                     <div class="service-right">
-                      <span class="service-text">
+                      <div class="service-text">
                         <p>No other company in the industry</p>
                         <p>can provide the caliber of customer and
                         technical support that Iron Box does.</p>
@@ -77,41 +77,41 @@
                         launch a specific cable to your required specifications, and<br>
                         our customer support and sales team will get back to you<br>
                         with follow up and quotes at lightning speed.</p>
-                      </span>
+                      </div>
                     </div>
                   </section>
             <section class="inventory-flex-container" id="inventory">
             <div class=" inventory-left">
-                <span class="inventory-text">
+                <div class="inventory-text">
                     <p><span class="text-line-one">Through our own warehouses and our 
                         extensive network of partner warehouses 
                         and factories located throughout the 
                         world,</span> 
                         <span class="text-line-two">we hold the world's largest 
                         variety and number of stock 
-                        cables, period.</span>
+                        cables, period.</span></p>
                         <hr class="blue-line">                       
-                        We ship product out of facilities in North Carolina, 
+                        <p>We ship product out of facilities in North Carolina, 
                         Utah, California, Ohio, Canada, and New Jersey, as 
                         well as direct import from multiple locations in Asia. 
                         Since we are also a manufacturer of UL listed custom 
                         power cables we can quickly adjust to build just about 
                         any configuration needed at a moment's notice.</p>
-                </span>
+                </div>
             </div>
             <div class="inventory-right">
                 <h3 class="inventory-heading">Largest Inventory</h3>
                 <p class="inventory-text-right">Among our wide array of products, we offer the very best in:</p>
                 <div class="inventory-button-layout">
-                    <span class="product-button">
+                    <div class="product-button">
                         <a href="#extension" class="button-animate" rel="noopener noreferrer">Locking Extension Power Cords</a>
-                    </span>
-                    <span class="product-button">
+                    </div>
+                    <div class="product-button">
                         <a href="#adapter" class="button-animate" rel="noopener noreferrer">Locking Plug Adapters</a>
-                    </span>
-                    <span class="product-button">
+                    </div>
+                    <div class="product-button">
                         <a href="#wiring" class="button-animate" rel="noopener noreferrer">Wiring Devices</a>
-                    </span>
+                    </div>
                 </div>
             </div>
             </section>
@@ -125,7 +125,7 @@
             <section class="plug-adapter-container" id="adapter">
             <div class="adapter-left">
                 <h3>Locking Plug Adapter<br></h3>
-                    <span class="text-shrink"><p>Power Cords</p></span>
+                    <div class="text-shrink"><p>Power Cords</p></div>
             </div>
             <div class="adapter-right"></div>
             </section> 
@@ -138,25 +138,25 @@
             <section class="contact-section" id="contact">
                     <h4>Contact Us</h4>
                     <div class="container">
-                      <form method="post" action="contactengine.php">
+                      <form name="contactform" method="post" action="send_form_email.php">
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <input type="text" id="fname" name="ftname" placeholder="Your name..">
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <input type="text" id="lname" name="lname" placeholder="Your last name..">
                         <label for="email">Email</label>
 				        <input type="text" name="email" id="email" placeholder="Your email.." />                        
                         <label for="message">Message</label>
                         <textarea class="text-area" id="message" name="message" placeholder="How can we assist you?"></textarea>
-                        <input type="submit" value="submit">
+                        <input type="submit" value="submit" >
                       </form>
                     </div>
             </section>
         </main>
         <footer>
             <div class="to-top-container">
-                <span class="btn-contain">
+                <div class="btn-contain">
                     <a class="gotop-btn" href="#"><i class="fas fa-chevron-up"></i></a>
-                </span>
+                </div>
             </div>
             <article class="grid">
                 <section class="social-row">
@@ -169,8 +169,8 @@
                         <img class="division-of" src="img/division_of_logo.png" alt="A Division of Iron Box">
                 </section>
                 <section></section>
-                <section>
-                    <span class="copywrite">© 2019 Iron Box. All rights reserved.</span>
+                <section class="copy-style">
+                    <div class="copywrite">© 2019 Iron Box. All rights reserved.</div>
                 </section>
                 <section></section>
             </article>
