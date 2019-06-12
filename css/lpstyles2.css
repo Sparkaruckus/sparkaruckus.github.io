@@ -771,6 +771,10 @@ transition: all 0.2s ease-in-out .0s;
  /*  Responsive Design  */
 
  @media (max-width: 768px) {
+     html {
+         margin: 0;
+     }
+
      header {
          display: flex;
          flex-direction: column;
@@ -929,5 +933,22 @@ transition: all 0.2s ease-in-out .0s;
 
     .contact-section {
         width: 75%;
+    }
+
+    .grid {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        text-align: center;
+        grid-template-columns: 50px;
+        grid-template-rows: 50px;
+    }
+
+    .social-row-2 {
+        display: none;
+    }
+
+    .social-row {
+        display: none;
     }
  }
