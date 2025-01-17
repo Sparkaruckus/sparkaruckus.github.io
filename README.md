@@ -1,2 +1,2 @@
-# sparkaruckus.github.io
+# sparkaruckus
 Beginners Website
